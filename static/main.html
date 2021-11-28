@@ -1,10 +1,43 @@
-<ul class='circle-container'>
-    <li><img src='http://lorempixel.com/100/100/city' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/nature' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/abstract' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/cats' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/food' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/animals' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/business' alt="..." /></li>
-    <li><img src='http://lorempixel.com/100/100/people' alt="..." /></li>
-</ul>
+<!DOCTYPE html>
+
+
+<link rel="stylesheet" href="/static/main.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://kit.fontawesome.com/39fcf779bc.js" crossorigin="anonymous"></script>
+
+<head>
+    <title>
+        RSSI
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #top {
+            padding-top: {{top}} ;
+            padding-left: {{left}};
+        }
+    </style>
+</head>
+
+<body id="body" style="background-image: url({{ url_for('static', filename='images/project.png') }})">
+    <div id="top" class="container container-fluid pb-5">
+        <i id="icon" class="fab fa-bluetooth fa-5x"></i>
+    </div>
+    <div id="bottom" class="container container-fluid pt-100 d-flex justify-content-center">
+        <i id="icon" class="fas fa-user-circle fa-6x"></i>
+    </div>
+
+</body>
+
+</html>

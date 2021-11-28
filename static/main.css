@@ -1,0 +1,15 @@
+#bottom {
+    position: fixed;
+    margin-top: 81vh;
+    margin-left: 33vh;
+}
+
+#top {
+    position: absolute;
+}
+
+#body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
