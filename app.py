@@ -54,4 +54,5 @@ def rssi(rssi):
     return render_template("main.html", left=left, top = top)
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()
